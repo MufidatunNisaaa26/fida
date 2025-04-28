@@ -1,0 +1,293 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio fida</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 10px;
+      padding: 10px;
+      background-color: #6c605e;
+    }
+    header {
+      background-color: #615a59;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items:center;
+      position: fixed;
+      width: 100%;
+      top: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+     nav a {
+      margin: 0 20px;
+      text-decoration: none;
+      color:black ;
+
+    }
+    .navbar a, .dropbtn {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      text-align: center;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: #7e7473;
+    }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .intro {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      flex: 1;
+    }
+    .intro-text {
+      flex: 0 0 60%;
+      text-align: left;
+      padding-right: 20px;
+      
+    }
+    .intro img {
+  width: 200px;         /* bisa disesuaikan ukurannya */
+  height: 200px;        /* pastikan tinggi dan lebar sama */
+  object-fit: cover;    /* menjaga agar gambar tetap rapi */
+  border-radius: 50%;   /* ini yang bikin jadi lingkaran */
+  display: block;
+  margin: 0 auto;       /* biar gambar di tengah */
+}
+.tentang, .portofolio, .opini, .kontak {
+      padding: 10px;
+      text-align: center;
+    }
+
+     .tentang img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .tentang {
+      display: flex;
+      justify-content: space-between;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    th, td {
+      border: 1px solid #6d615d;
+      padding: 8px;
+      text-align: center;
+    }
+    .opini {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .opini div {
+      width: calc(33.333% - 10px);
+      border: 1px solid #847574;;
+      text-align: center;
+    }
+    .opini img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .kontak {
+      padding: 20px;    
+    }
+    .kontak1 {
+      display: flex;
+      margin-top: 40px;
+      gap: 30px;
+      
+    }
+
+    form input, form textarea {
+      display: block;
+      margin-bottom: 10px;
+      width: 100%;
+      padding: 5px;
+    }
+
+    .maps{
+      margin-top: 10px;
+      height: 200px;
+      text-align: center;
+      line-height: 200px;
+      background-color: rgb(172, 150, 150);
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #504e4d;;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">     
+      <a href="#">Beranda</a>
+      <a href="#">Tentang Saya</a>
+      <a href="#">portofolio</a>
+      <a href="#">opini</a>
+
+      <div class="dropdown">
+        <button class="dropbtn">Lainnya</button>
+        <div class="dropdown-content">
+          <a href="https://www.instagram.com/_vydaaa?igsh=cHg4dnNpcmlqcTY0" target="_blank">Instagram</a>
+          <a href="https://www.facebook.com/share/16RavWXY7N/" target="_blank">Facebook</a>
+          <a href="https://www.tiktok.com/@_softblue2?_t=ZS-8viNrGiCY5s&_r=1" target="_blank">Tiktok</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="intro">
+    
+    <img src="c:\Users\LENOVO\Downloads\FOTO SAYA .jpg" alt="Foto">
+    <div class="intro-text">
+    <h2>Halo, saya mufi datun nisa</h2>
+    <P>Saya seorang mahasiswa di universitas nahdlatul ulama sunan giri bojonegoro.</P>
+  </div>
+  </section> 
+
+  <hr class="garis-pemisah">
+
+   <section class="tentang" id="tentang">
+    <div>
+      <h2>Tentang Saya</h2>
+      <p>halo, nama saya mufi datun nisa bisa di panggil fida ,saya berasal dari desa panolan salah satu desa di kabupaten blora<br> saya sekarang menjadi mahasiswi prodi teknik informatika di salah satu universitas di bojonegoro yaitu <br> universitas nahdlatul ulama sunan giri. 
+    </div>
+    <img src="c:\Users\LENOVO\Downloads\DSC09890.JPG" alt="Foto Tentang Saya">
+  </section> 
+
+  <hr class="garis-pemisah">
+
+   <section class="portofolio" id="portofolio">
+    <h2>Portofolio</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Nama Kegiatan</th>
+          <th>Waktu Kegiatan</th>
+          <th>Bukti Kegiatan</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>pkkmb UNUGIRI</td>
+          <td>2024</td>
+          <td><a href="https://drive.google.com/file/d/1IgjbXLtpXM_CukzryTsvL3mQtpnoolDd/view?usp=drivesdk">lihat bukti</a></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>pembuatan makalah</td>
+          <td>2023/2024</td>
+          <td> <a href="https://drive.google.com/file/d/12L3uqeZmvvRocioJaf0rM6CcqJX4XHBp/view?usp=drivesdk">lihat bukti</a></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>workshop MOC</td>
+          <td>2024</td>
+          <td><a href="https://drive.google.com/file/d/17IzOWZG8lW8XNSqnDRbLifdrV-V0ufa5/view?usp=drivesdk">lihat bukti</a></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>IT CAMP</td>
+          <td>2024</td>
+          <td><a href="https://drive.google.com/file/d/17JS-rvIUWvE7syUQR6MxNxz0a51uXnop/view?usp=drivesdk">lihat bukti</a></td>
+        </tr>
+        <!-- Tambah baris lain jika perlu -->
+      </tbody>
+    </table>
+  </section>
+  
+  <hr class="garis-pemisah">
+
+    <section>
+    <h2 style="text-align: center;">Opini</h2>
+ 
+  </section>  
+  <section class="opini">
+    <div><img src="c:\Users\LENOVO\Downloads\IT CAMP.jpg" alt="Opini 1"><h4>IT CAMP</h4></div>
+    <div><img src="c:\Users\LENOVO\Downloads\MAKRAB NUTASI.jpg" alt="Opini 2"><h4>MAKRAB NUTASI</h4></div>
+    <div><img src="c:\Users\LENOVO\Downloads\WORKSHOP.jpg" alt="Opini 3"><h4>WORKSHOP</h4></div>
+    <div><img src="c:\Users\LENOVO\Downloads\WhatsApp Image 2025-04-28 at 10.58.41_08f34b20.jpg" alt="Opini 4"><h4>MAHASISWI TI2A</h4></div>
+    <div><img Src="c:\Users\LENOVO\OneDrive\Images\Screenshot\Screenshot 2025-04-28 104936.png" alt="Opini 5"><h4>Tugas pemograman web</h4></div>
+    <div><img src="c:\Users\LENOVO\Downloads\temu akademik.jpg" alt="Opini 6"><h4>Temu akademik</h4></div>
+  </section> 
+   <hr class="garis garis-pemisah">
+   
+   <section class="kontak">
+    <h2>hubungi saya</h2>
+    <div class="kontak1">
+
+    <form>
+      <input type="email" placeholder="Email">
+      <input type="text" placeholder="Nama">
+      <input type="text" placeholder="Subject">
+      <textarea placeholder="Isi Pesan"></textarea>
+      <button type="submit">Kirim</button>
+    </form>
+ 
+    <div class="maps">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.1254446203193!2d111.53711117357054!3d-7.226529770961442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7761b8a0cf582d%3A0x583c4ae4aa426493!2sGg.%20Bala%20Dewa%2C%20Kenongogong%2C%20Panolan%2C%20Kec.%20Kedungtuban%2C%20Kabupaten%20Blora%2C%20Jawa%20Tengah%2058381!5e0!3m2!1sid!2sid!4v1745810241378!5m2!1sid!2sid" 
+      width="450" 
+      height="300" 
+      style="border:0;" 
+      allowfullscreen="" loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>"
+    </div>
+  </div>
+   </section> 
+
+   <footer>
+    <p>Copyright by MUFI DATUN NISA</p>
+  </footer>
+</body>
+</html>
